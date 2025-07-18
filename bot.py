@@ -118,7 +118,7 @@ Select a token to swap with MON:
 # Read Wallets
 def load_wallets():
     try:
-        with open("kz.txt", "r") as f:
+        with open("pv.txt", "r") as f:
             private_keys = [line.strip() for line in f if line.strip()]
         if not private_keys:
             print(center_text(Fore.RED + "Warning: No private keys found in kz.txt." + Style.RESET_ALL))
